@@ -10,8 +10,8 @@ require 'bundler/inline'
 
 gemfile do
   source 'https://rubygems.org'
-  gem 'procon_bypass_man', github: 'splaspla-hacker/procon_bypass_man', branch: "0.1.1"
-  gem 'procon_bypass_man-splatoon2', github: 'splaspla-hacker/procon_bypass_man-splatoon2', branch: "0.1.0"
+  gem 'procon_bypass_man', github: 'splaspla-hacker/procon_bypass_man', tag: "0.1.1"
+  gem 'procon_bypass_man-splatoon2', github: 'splaspla-hacker/procon_bypass_man-splatoon2', tag: "0.1.0"
 end
 
 ProconBypassMan.tap do |pbm|
