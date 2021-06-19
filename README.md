@@ -1,34 +1,53 @@
 # ProconBypassMan::Splatoon2
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/procon_bypass_man/splatoon2`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+スプラトゥーン2用 https://github.com/splaspla-hacker/procon_bypass_man のプラグインです。
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'procon_bypass_man-splatoon2'
+gem 'procon_bypass_man-splatoon2', github: 'splaspla-hacker/procon_bypass_man-splatoon2'
 ```
 
 And then execute:
 
     $ bundle install
 
-Or install it yourself as:
-
-    $ gem install procon_bypass_man-splatoon2
-
 ## Usage
 
-TODO: Write usage instructions here
 
-## Development
+```ruby
+ProconBypassMan.run do
+  prefix_keys_for_changing_layer [:zr, :r, :zl, :l]
+  load_macro_plugin ProconBypassMan::Splatoon2::Macro::FastReturn
+  load_mode_plugin ProconBypassMan::Splatoon2::Mode::Guruguru
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+  layer :up, mode: :manual do
+    macro ProconBypassMan::Splatoon2::Macro::FastReturn.name, if_pressed: [:y, :b, :down]
+  end
+  layer :right, mode: ProconBypassMan::Splatoon2::Mode::Guruguru.name
+  layer :left do
+    # no-op
+  end
+  layer :down do
+    flip :zl
+  end
+end
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## モード
+### guruguru
+* 適当にうろうろします
+  * 試合中、無操作による切断を防ぐためやデバッグ用途です
+
+(TODO 動画を貼る)
+
+## マクロ
+### fast_return
+* 試合中にリスポーンに戻る操作を実行するマクロです
+
+(TODO 動画を貼る)
 
 ## Contributing
 
