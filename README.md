@@ -14,11 +14,6 @@ gemfile do
   gem 'procon_bypass_man-splatoon2', github: 'splaspla-hacker/procon_bypass_man-splatoon2', tag: "0.1.0"
 end
 
-ProconBypassMan.tap do |pbm|
-  pbm.logger = "./app.log"
-  pbm.logger.level = :debug
-end
-
 fast_return = ProconBypassMan::Splatoon2::Macro::FastReturn
 guruguru = ProconBypassMan::Splatoon2::Mode::Guruguru
 
