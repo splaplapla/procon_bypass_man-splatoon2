@@ -2,31 +2,39 @@
 
 スプラトゥーン2用 https://github.com/splaspla-hacker/procon_bypass_man のプラグインです。
 
-## Installation
-
-Add this line to your application's Gemfile:
-
+## 使用例
 ```ruby
-gem 'procon_bypass_man-splatoon2', github: 'splaspla-hacker/procon_bypass_man-splatoon2'
-```
+#!/usr/bin/env ruby
 
-And then execute:
+require 'bundler/inline'
 
-    $ bundle install
+gemfile do
+  source 'https://rubygems.org'
+  gem 'procon_bypass_man', github: 'splaspla-hacker/procon_bypass_man', branch: "edge"
+  gem 'procon_bypass_man-splatoon2', github: 'splaspla-hacker/procon_bypass_man-splatoon2', branch: "master"
+end
 
-## Usage
+ProconBypassMan.tap do |pbm|
+  pbm.logger = "./app.log"
+  pbm.logger.level = :debug
+end
 
+fast_return = ProconBypassMan::Splatoon2::Macro::FastReturn
+guruguru = ProconBypassMan::Splatoon2::Mode::Guruguru
 
-```ruby
 ProconBypassMan.run do
+  install_macro_plugin fast_return
+  install_mode_plugin guruguru
+
   prefix_keys_for_changing_layer [:zr, :r, :zl, :l]
-  load_macro_plugin ProconBypassMan::Splatoon2::Macro::FastReturn
-  load_mode_plugin ProconBypassMan::Splatoon2::Mode::Guruguru
 
   layer :up, mode: :manual do
-    macro ProconBypassMan::Splatoon2::Macro::FastReturn.name, if_pressed: [:y, :b, :down]
+    flip :zr, if_pressed: :zr, force_neutral: :zl
+    flip :zl, if_pressed: [:y, :b, :zl]
+    flip :down, if_pressed: :down
+    macro fast_return.name, if_pressed: [:y, :b, :down]
   end
-  layer :right, mode: ProconBypassMan::Splatoon2::Mode::Guruguru.name
+  layer :right, mode: guruguru.name
   layer :left do
     # no-op
   end
@@ -56,7 +64,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the ProconBypassMan::Splatoon2 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/procon_bypass_man-splatoon2/blob/master/CODE_OF_CONDUCT.md).
