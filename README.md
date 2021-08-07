@@ -1,6 +1,6 @@
 # ProconBypassMan::Splatoon2
 
-スプラトゥーン2用 https://github.com/splaspla-hacker/procon_bypass_man のプラグインです。
+https://github.com/splaspla-hacker/procon_bypass_man のスプラトゥーン2用プラグインです。
 
 ## 使用例
 https://github.com/splaspla-hacker/procon_bypass_man/tree/master/examples/practical
