@@ -1,13 +1,13 @@
 module ProconBypassMan
   module Splatoon2
     module Macro
-      module FastReturn
+      module JumpToRightKey
         def self.name
-          :fast_return
+          :jump_to_right_key
         end
 
         def self.steps
-          [:x, :down, :a, :a].freeze
+          [:x, :right, :a, :a].freeze
         end
       end
     end

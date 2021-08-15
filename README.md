@@ -56,8 +56,17 @@ setting: |-
 (TODO 動画を貼る)
 
 ## マクロ
-### fast_return
-* 試合中にリスポーンに戻る操作を実行するマクロです
+### ProconBypassMan::Splatoon2::Macro::FastReturn
+* 試合中にリスポーンに戻る操作を実行します
+
+### ProconBypassMan::Splatoon2::Macro::JumpToUpKey
+* 試合中に上キーに割り当てられている味方へのスーパージャンプを実行します
+
+### ProconBypassMan::Splatoon2::Macro::JumpToRightKey
+* 試合中に右キーに割り当てられている味方へのスーパージャンプを実行します
+
+### ProconBypassMan::Splatoon2::Macro::JumpToLeftKey
+* 試合中に左キーに割り当てられている味方へのスーパージャンプを実行します
 
 (TODO 動画を貼る)
 
