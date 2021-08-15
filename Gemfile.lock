@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    procon_bypass_man-splatoon2 (0.1.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (13.0.4)
+
+PLATFORMS
+  arm64-darwin-20
+  x86_64-linux
+
+DEPENDENCIES
+  procon_bypass_man-splatoon2!
+  rake (~> 13.0)
+
+BUNDLED WITH
+   2.2.16
