@@ -9,8 +9,9 @@ GEM
     rake (13.0.4)
 
 PLATFORMS
+  arm-linux
   arm64-darwin-20
-  x86_64-linux
+  armv7l-linux
 
 DEPENDENCIES
   procon_bypass_man-splatoon2!
