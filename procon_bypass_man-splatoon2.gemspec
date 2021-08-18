@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "PBM plugin for splatoon2"
   spec.description   = spec.summary
-  spec.homepage      = "https://github.com/splaspla-hacker/procon_bypass_man-splatoon2"
+  spec.homepage      = "https://github.com/splaplapla/procon_bypass_man-splatoon2"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 

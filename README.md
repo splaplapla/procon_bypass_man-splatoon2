@@ -1,9 +1,9 @@
 # ProconBypassMan::Splatoon2
 
-https://github.com/splaspla-hacker/procon_bypass_man のスプラトゥーン2用プラグインです。
+https://github.com/splaplapla/procon_bypass_man のスプラトゥーン2用プラグインです。
 
 ## 使用例
-https://github.com/splaspla-hacker/procon_bypass_man/tree/master/examples/practical
+https://github.com/splaplapla/procon_bypass_man/tree/master/examples/practical
 
 ```ruby
 #!/usr/bin/env ruby
@@ -13,7 +13,7 @@ require 'bundler/inline'
 gemfile do
   source 'https://rubygems.org'
   gem 'procon_bypass_man', '0.1.3'
-  gem 'procon_bypass_man-splatoon2', github: 'splaspla-hacker/procon_bypass_man-splatoon2', tag: "0.1.0"
+  gem 'procon_bypass_man-splatoon2', github: 'splaplapla/procon_bypass_man-splatoon2', tag: "0.1.0"
 end
 
 ProconBypassMan.run(setting: "./setting.yml")
@@ -72,7 +72,7 @@ setting: |-
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/splaspla-hacker/procon_bypass_man-splatoon2. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/splaspla-hacker/procon_bypass_man-splatoon2/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/splaplapla/procon_bypass_man-splatoon2. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/splaplapla/procon_bypass_man-splatoon2/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
