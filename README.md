@@ -12,8 +12,8 @@ require 'bundler/inline'
 
 gemfile do
   source 'https://rubygems.org'
-  gem 'procon_bypass_man', '0.1.3'
-  gem 'procon_bypass_man-splatoon2', github: 'splaplapla/procon_bypass_man-splatoon2', tag: "0.1.0"
+  gem 'procon_bypass_man', '0.1.6'
+  gem 'procon_bypass_man-splatoon2', github: 'splaplapla/procon_bypass_man-splatoon2', tag: "0.1.1"
 end
 
 ProconBypassMan.run(setting: "./setting.yml")
