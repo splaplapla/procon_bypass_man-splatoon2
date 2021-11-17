@@ -3,7 +3,6 @@
 https://github.com/splaplapla/procon_bypass_man のスプラトゥーン2用プラグインです。
 
 ## 使用例
-https://github.com/splaplapla/procon_bypass_man/tree/master/examples/practical
 
 ```ruby
 #!/usr/bin/env ruby
@@ -12,7 +11,7 @@ require 'bundler/inline'
 
 gemfile do
   source 'https://rubygems.org'
-  gem 'procon_bypass_man', '0.1.6'
+  gem 'procon_bypass_man'
   gem 'procon_bypass_man-splatoon2', github: 'splaplapla/procon_bypass_man-splatoon2', tag: "0.1.1"
 end
 
