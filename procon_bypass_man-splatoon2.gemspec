@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/procon_bypass_man/splatoon2/version"
+require_relative "lib/procon_bypass_man/plugin/splatoon2/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "procon_bypass_man-splatoon2"
-  spec.version       = ProconBypassMan::Splatoon2::VERSION
+  spec.version       = ProconBypassMan::Plugin::Splatoon2::VERSION
   spec.authors       = ["jiikko"]
   spec.email         = ["n905i.1214@gmail.com"]
 

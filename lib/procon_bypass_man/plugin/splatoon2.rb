@@ -6,6 +6,8 @@ require_relative "splatoon2/macro/jump_to_left_key"
 require_relative "splatoon2/mode/guruguru"
 
 module ProconBypassMan
-  module Splatoon2
+  module Plugin
+    module Splatoon2
+    end
   end
 end

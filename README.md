@@ -1,4 +1,4 @@
-# ProconBypassMan::Splatoon2
+# ProconBypassMan::Plugin::Splatoon2
 
 https://github.com/splaplapla/procon_bypass_man のスプラトゥーン2用プラグインです。
 
@@ -23,8 +23,8 @@ setting.yml
 ```yaml
 version: 1.0
 setting: |-
-  fast_return = ProconBypassMan::Splatoon2::Macro::FastReturn
-  guruguru = ProconBypassMan::Splatoon2::Mode::Guruguru
+  fast_return = ProconBypassMan::Plugin::Splatoon2::Macro::FastReturn
+  guruguru = ProconBypassMan::Plugin::Splatoon2::Mode::Guruguru
 
   install_macro_plugin fast_return
   install_mode_plugin guruguru
@@ -55,16 +55,16 @@ setting: |-
 (TODO 動画を貼る)
 
 ## マクロ
-### ProconBypassMan::Splatoon2::Macro::FastReturn
+### ProconBypassMan::Plugin::Splatoon2::Macro::FastReturn
 * 試合中にリスポーンに戻る操作を実行します
 
-### ProconBypassMan::Splatoon2::Macro::JumpToUpKey
+### ProconBypassMan::Plugin::Splatoon2::Macro::JumpToUpKey
 * 試合中に上キーに割り当てられている味方へのスーパージャンプを実行します
 
-### ProconBypassMan::Splatoon2::Macro::JumpToRightKey
+### ProconBypassMan::Plugin::Splatoon2::Macro::JumpToRightKey
 * 試合中に右キーに割り当てられている味方へのスーパージャンプを実行します
 
-### ProconBypassMan::Splatoon2::Macro::JumpToLeftKey
+### ProconBypassMan::Plugin::Splatoon2::Macro::JumpToLeftKey
 * 試合中に左キーに割り当てられている味方へのスーパージャンプを実行します
 
 (TODO 動画を貼る)
