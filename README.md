@@ -35,10 +35,10 @@ setting: |-
     flip :zr, if_pressed: :zr, force_neutral: :zl
     flip :zl, if_pressed: [:y, :b, :zl]
     flip :down, if_pressed: :down
-    macro fast_return.name, if_pressed: [:y, :b, :down]
+    macro fast_return, if_pressed: [:y, :b, :down]
     remap :l, to: :zr
   end
-  layer :right, mode: guruguru.name
+  layer :right, mode: guruguru
   layer :left do
     # no-op
   end
@@ -48,7 +48,7 @@ setting: |-
 ```
 
 ## モード
-### guruguru
+### ProconBypassMan::Plugin::Splatoon2::Mode::Guruguru
 * 適当にうろうろします
   * 試合中、無操作による切断を防ぐためやデバッグ用途です
 
