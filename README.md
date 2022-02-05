@@ -1,6 +1,7 @@
 # ProconBypassMan::Plugin::Splatoon2
 
-https://github.com/splaplapla/procon_bypass_man のスプラトゥーン2用プラグインです。
+* https://github.com/splaplapla/procon_bypass_man のスプラトゥーン2用プラグインです。
+* 本プラグインは新しめの procon_bypass_man に同梱しているので明示的に読み込む必要はありません
 
 ## 使用例
 
@@ -12,7 +13,6 @@ require 'bundler/inline'
 gemfile do
   source 'https://rubygems.org'
   gem 'procon_bypass_man'
-  gem 'procon_bypass_man-splatoon2', github: 'splaplapla/procon_bypass_man-splatoon2', tag: "0.1.1"
 end
 
 ProconBypassMan.run(setting: "./setting.yml")
@@ -66,6 +66,11 @@ setting: |-
 
 ### ProconBypassMan::Plugin::Splatoon2::Macro::JumpToLeftKey
 * 試合中に左キーに割り当てられている味方へのスーパージャンプを実行します
+
+(TODO 動画を貼る)
+
+### ProconBypassMan::Plugin::Splatoon2::Macro::SokuwariForSplashBomb
+* スプラッシュボムなサブを使って1個のバブルを即割します
 
 (TODO 動画を貼る)
 
