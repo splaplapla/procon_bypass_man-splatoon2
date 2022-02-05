@@ -74,7 +74,9 @@ setting: |-
 * スペシャルとインクタンクが溜まっている状態で実行してください
 * このマクロは、ボムと投げた後にスペシャル発動し、バブルを1つ投げてから、ボムをもう一度投げバブルを割ります
 
-(TODO 動画を貼る)
+
+https://user-images.githubusercontent.com/1664497/152633242-da01697f-12ae-496a-9d7f-22eda62cf8dd.mp4
+
 
 ## Contributing
 
