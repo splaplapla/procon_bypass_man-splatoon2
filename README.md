@@ -71,6 +71,8 @@ setting: |-
 
 ### ProconBypassMan::Plugin::Splatoon2::Macro::SokuwariForSplashBomb
 * スプラッシュボムなサブを使って1個のバブルを即割します
+* スペシャルとインクタンクが溜まっている状態で実行してください
+* このマクロは、ボムと投げた後にスペシャル発動し、バブルを1つ投げてから、ボムをもう一度投げバブルを割ります
 
 (TODO 動画を貼る)
 
