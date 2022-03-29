@@ -74,9 +74,13 @@ setting: |-
 * スペシャルとインクタンクが溜まっている状態で実行してください
 * このマクロは、ボムと投げた後にスペシャル発動し、バブルを1つ投げてから、ボムをもう一度投げバブルを割ります
 
-
 https://user-images.githubusercontent.com/1664497/152633242-da01697f-12ae-496a-9d7f-22eda62cf8dd.mp4
 
+### ProconBypassMan::Plugin::Splatoon2::Macro::ChargeTansanBomb
+* 左スティックを高速に左右にシェイクするマクロです
+* タンサンボムを貯めるのに使います
+
+https://user-images.githubusercontent.com/1664497/160649435-52b084ed-05b0-4c58-88ba-667b5f256405.mp4
 
 ## Contributing
 
